@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DailyNews</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>   
+    <link rel="shortcut icon" href="./logo.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="loader">
+        <div class="bars"></div><br>
+        <img src="./logo.jpg" alt="CIPHER 7" style="height:400px; width:400px; border-radius:30px;">
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">DailyNews</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./about/index.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact/index.html">Contact-Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="categories">
+        <a href="./categories/business/business.html" class="btn" id="business">Business</a>
+        <a href="./categories/entertainment/entertainment.html" class="btn" id="entertainment">Entertainment</a>
+        <a href="./categories/health/health.html" class="btn" id="health" id="health">Health</a>
+        <a href="./categories/science/science.html" class="btn" id="science">Science</a>
+        <a href="./categories/sports/sport.html" class="btn" id="sports">Sports</a>
+        <a href="./categories/technology/technology.html" class="btn" id="tehnology">Technology</a>
+    </div>
+    
+    <center>
+        <div class="main">
+            <div class="main-screen">
+                <div class="logo">DailyNews</div>
+                <div id="bodyTag"></div>
+            </div> 
+    </center>
+    <footer>
+        
+        <div class="newsletter">
+            <p id="subs">SUBSCRIBE TO NEWSLETTER</p>
+            <input type="email" id="email" placeholder="Email address">
+            <button id="btn">SEND</button><br>
+
+            <select name="category" id="category">
+                <option value="" selected disabled>Category</option>
+                <option value="Business" >Business</option>
+                <option value="Entertainment" >Entertainment</option>
+                <option value="Health" >Health</option>
+                <option value="Science" >Science</option>
+                <option value="Sports" id="sports">Sports</option>
+                <option value="Technology" id="tehnology">Technology</option>
+            </select>
+
+        </div>
+        <div class="extra">
+        <div class="information">
+            <h5>INFORMATION</h5>
+            <a href="./about/index.html">about</a>
+            <a href="./contact/index.html">contact</a>
+            <a href="#">terms</a>
+        </div>
+        <div class="followus">
+            <h5>FOLLOW US</h5>
+            <a href="https://www.instagram.com/">instagram</a>
+            <a href="https://www.facebook.com/">facebook</a>
+            <a href="https://twitter.com/">twitter</a>
+        </div>
+    </div>
+        <div id="copy">
+            © 2022 Copyright&nbsp;:&nbsp;&nbsp;<a href="#">CIPHER 7</a>
+        </div>
+    </footer>
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
